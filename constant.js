@@ -1,6 +1,6 @@
 module.exports = {
   FB_PAGE_TOKEN:
-    "EAADZB6mW8cu0BADkPydvNTthZBY6QZAb16AS8apZBfNyApeK5yzcA188j2npoejOpSq0RyWme0ts33zJNsi1QxZALmZAZCtzIZBgzYJa7tABX5qXq4HnrciRk3mCgk2qSOaNzZCHyO84xaAzsjweFwdl4OizudkOG2oRTNzxcgDTaFwZDZD",
+    "EAADZB6mW8cu0BAK5P0GGyamQ3PGoDZA4ogV692RepqlOYdinxQNUDcMjZBIpjRZAcF2NPe7uyzKqZC3hcRuKxnX3kxnTB7GZCbgIMgZABwAI2gIMKCJyzwLYdPRzQ9O5KtNAwAbZBqbmdEpZCZC4IjPTJyyqaeD3O7f3M9ozKAnRUZBLQZDZD",
   FB_VERIFY_TOKEN: "facebookbot",
   FB_APP_SECRET: "51a4eb40d5d7cb21cfefc3f5d2a0fab4",
   SERVER_URL: "https://ebf8dc7e.ngrok.io/",
