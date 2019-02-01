@@ -1,0 +1,24 @@
+{
+  "name": "hero",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dialogflow": "^0.5.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "mongoose": "^5.3.13",
+    "request": "^2.87.0",
+    "uuid": "^3.3.2"
+  }
+}
