@@ -86,7 +86,7 @@ const usersMap = new Map();
 
 // Index route
 app.get("/", function (req, res) {
-  res.send("Hello world, I am a chat bot");
+  res.send("Hello world, I am a chat bot alive");
 });
 
 
@@ -285,7 +285,7 @@ async function handleDialogFlowAction(
       var { cars, carmodel, year, insurance } = parameters.fields;
 
       if (fbService.isDefined(contexts[0].parameters.fields['used-car']) && !insurance.stringValue) {
-        fbService.sendTextMessage(sender, "Would you like a Financing Quote on this Vehicle?")
+        fbService.sendTextMessage(sender, "Would you like a Financing Quote on this Vehicle ehh?")
       } else if (insurance.stringValue && fbService.isDefined(contexts[0].parameters.fields['used-car'])) {
         fbService.sendQuickReply(sender, "Do you have a Trade-In ?", yes_no)
       }
@@ -352,7 +352,7 @@ async function handleDialogFlowAction(
       console.log(parameters.fields);
 
       if (mail.stringValue || mobile.stringValue) {
-        fbService.sendTextMessage(sender, `Thanks for reaching out.  Christian will be intouch shortly.`)
+        fbService.sendTextMessage(sender, `Thanks for reaching out.  yovip will be intouch shortly.`)
       }
       fbService.handleMessages(messages, sender);
       break;
@@ -411,7 +411,7 @@ function handleDialogFlowResponse(sender, response) {
     //dialogflow could not evaluate input.
     fbService.sendTextMessage(
       sender,
-      "I'm not sure what you want. Can you be more specific?"
+      "I'm not sure what you want. Can you be more specific yovip?"
     );
   } else if (fbService.isDefined(responseText)) {
     fbService.sendTextMessage(sender, responseText);
@@ -437,7 +437,7 @@ async function greetUserText(userId) {
       if (!error && response.statusCode == 200) {
         var user = JSON.parse(body);
         var query = {
-          "sFbData.id": user.id
+          "FbData.id": user.id
         },
           update = {
             dUpdatedDate: new Date()
@@ -452,7 +452,7 @@ async function greetUserText(userId) {
         UserModel.findOneAndUpdate(query, update, options).then(result => {
           result.sFbData = user;
           result.save().then(async (success) => {
-            var responseText = `Hi! Nice to meet you ${user.first_name}. I'm Carson. Christian's Assistant.`
+            var responseText = `Hi! Nice to meet you ${user.first_name}. I'm yovip. Christian's Assistant.`
             var url = "https://scontent.xx.fbcdn.net/v/t1.15752-0/p280x280/42686629_507772776365057_3601089422088470528_n.jpg?_nc_cat=100&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=446eec72884bb512b788203bd9c8e22d&oe=5CF2E920"
             fbService.sendTextMessage(user.id, responseText)
 
@@ -461,16 +461,16 @@ async function greetUserText(userId) {
             var qr = [{
               content_type: "text",
               title: "New Car 🚗",
-              payload: "New Car"
+              payload: "New Car yovip"
             },
             {
               content_type: "text",
               title: "Used Car purchase🚗",
-              payload: "Used Car"
+              payload: "Used Car yo"
             }, {
               content_type: "text",
               title: "Schedule Service 🧰",
-              payload: "Schedule Service"
+              payload: "Schedule Service y"
             }, {
               content_type: "text",
               title: "Referral Program 💸",
@@ -553,7 +553,7 @@ async function receivedPostback(event) {
       //unindentified payload
       fbService.sendTextMessage(
         senderID,
-        "I'm not sure what you want. Can you be more specific?"
+        "I'm not sure what you want. Can you be more specific vip?"
       );
       break;
   }
