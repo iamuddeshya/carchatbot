@@ -8,7 +8,7 @@ let options = {
 };
 mongoose.set("debug", true);
 mongoose.connect(
-  "mongodb://cha:cha123@ds147274.mlab.com:47274/book",
+  "mongodb://josephjimma:Gym@1234@ds221435.mlab.com:21435/mongoose1161",
   options,
   function(err) {
     if (err) {
