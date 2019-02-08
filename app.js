@@ -460,24 +460,24 @@ async function greetUserText(userId) {
             var responseText2 = "What can i help you with today?";
             var qr = [{
               content_type: "text",
-              title: "New Car 🚗",
+              title: "N Car 🚗",
               payload: "New Car yovip"
             },
             {
               content_type: "text",
-              title: "Used Car purchase🚗",
+              title: "UsCar purchase🚗",
               payload: "Used Car yo"
             }, {
               content_type: "text",
-              title: "Schedule Service 🧰",
+              title: "Sche Service 🧰",
               payload: "Schedule Service y"
             }, {
               content_type: "text",
-              title: "Referral Program 💸",
+              title: "Refer Program 💸",
               payload: "Referral Program"
             }, {
               content_type: "text",
-              title: "Contact 🤙",
+              title: "Con 🤙",
               payload: "Contact"
             }
             ];
