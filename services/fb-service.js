@@ -588,7 +588,7 @@ module.exports = {
       message: {
         text: text
       },
-      persona_id: "79290767773739"
+      persona_id: "792907677737389"
     };
     await self.callSendAPI(messageData);
   },
