@@ -428,7 +428,7 @@ async function resolveAfterXSeconds(x) {
 
 async function greetUserText(userId) {
   await request({
-    uri: "https://graph.facebook.com/v2.7/" + userId,
+    uri: "https://graph.facebook.com/v3.2/" + userId,
     qs: {
       access_token: config.FB_PAGE_TOKEN
     }
@@ -461,19 +461,19 @@ async function greetUserText(userId) {
             var qr = [{
               content_type: "text",
               title: "N Car 🚗",
-              payload: "New Car yovip"
+              payload: "New Car"
             },
             {
               content_type: "text",
               title: "UsCar purchase🚗",
-              payload: "Used Car yo"
+              payload: "Used Car"
             }, {
               content_type: "text",
-              title: "Sche Service 🧰",
-              payload: "Schedule Service y"
+              title: "Sche Servic 🧰",
+              payload: "Schedule Service"
             }, {
               content_type: "text",
-              title: "Refer Program 💸",
+              title: "Refer Progra 💸",
               payload: "Referral Program"
             }, {
               content_type: "text",
@@ -545,6 +545,7 @@ async function receivedPostback(event) {
         sessionIds,
         handleDialogFlowResponse,
         senderID,
+		payload
         "service"
       );
       break;

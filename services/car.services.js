@@ -29,19 +29,19 @@ const purcahseOrLease = (sender) => {
 }
 
 const tradeYes = (sender) => {
-    var responseText = "Was this vehicle originally purchased from Christian?";
+    var responseText = "Was this vehicle originally purchased from YoVIP?";
     fbService.sendQuickReply(sender, responseText, originalOp)
 }
 
 const contact = (sender) => {
     var card = [{
         "title": "Yovip car service",
-        "subtitle": "For js all your Vehicle needs: New, Used, Maintenance, Referrals welcomed.",
-        "image_url": "https://scontent-bom1-2.xx.fbcdn.net/v/t1.0-9/49739154_1193037890851964_6840531856140533760_n.jpg?_nc_cat=107&_nc_ht=scontent-bom1-2.xx&oh=e5fa8aba97a2b8bfc03bb9ad99cfbcae&oe=5CB3CF91",
+        "subtitle": "For all your Vehicle needs: New, Used, Maintenance, Referrals welcomed.",
+        "image_url": "https://scontent.fdel1-4.fna.fbcdn.net/v/t1.0-9/22728788_857629511065670_675564397629184718_n.jpg?_nc_cat=105&_nc_ht=scontent.fdel1-4.fna&oh=7e982ba2ef5ccb5c000207fc8128a30d&oe=5CFB23FF",
         "buttons": [{
           "type": "phone_number",
           "title": "Call 🤙",
-          "payload": "+19057022806"
+          "payload": "+919057022806"
         }]
       }];
 

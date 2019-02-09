@@ -588,7 +588,7 @@ module.exports = {
       message: {
         text: text
       },
-      persona_id: "792907677737389"
+      persona_id: "79290767773739"
     };
     await self.callSendAPI(messageData);
   },
@@ -601,7 +601,7 @@ module.exports = {
   callSendAPI: async function(messageData) {
    await request(
       {
-        uri: "https://graph.facebook.com/v2.6/me/messages",
+        uri: "https://graph.facebook.com/v3.2/me/messages",
         qs: {
           access_token: config.FB_PAGE_TOKEN
         },
