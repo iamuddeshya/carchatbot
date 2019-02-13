@@ -516,7 +516,7 @@ async function receivedPostback(event) {
     case "FACEBOOK_WELCOME":
       greetUserText(senderID);
       break;
-    case "Contact":
+    case "Contact Us":
     case "REFERRALS":
     case "ABOUT":
       _.contact(senderID)
@@ -554,7 +554,7 @@ async function receivedPostback(event) {
       //unindentified payload
       fbService.sendTextMessage(
         senderID,
-        "I'm not sure what you want. Can you be more specific vip?"
+        "I'm not sure what you want. Can you be more specific yovip?"
       );
       break;
   }
